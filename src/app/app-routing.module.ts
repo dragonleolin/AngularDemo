@@ -12,12 +12,14 @@ const routes: Routes = [
   {path:'opendata', component: OpendateComponent},
   {path:'dashboard', component: DashboardComponent},
   {path:'todoList', component: TodoListComponent},
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full'}
+  {path: '**', redirectTo: '/dashboard', pathMatch: 'full'}
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    enableTracing: true
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

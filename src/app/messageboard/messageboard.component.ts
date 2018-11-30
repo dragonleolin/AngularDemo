@@ -4,7 +4,7 @@ import { Message } from './message';
 @Component({
   selector: 'app-messageboard',
   templateUrl: './messageboard.component.html',
-  styleUrls: ['./messageboard.component.sass']
+  styleUrls: ['./messageboard.component.scss']
 })
 export class MessageboardComponent implements OnInit {
 

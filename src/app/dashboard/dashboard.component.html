@@ -1,11 +1,14 @@
 <nav>
   <div style="text-align:center">
-    <a href="" routerLink="/message" >到留言板</a>
+    <a href="" routerLink="/message"
+    routerLinkActive="active">到留言板</a>
     <div>
-      <a href="" routerLink="/opendata" >查看空氣品質</a>
+      <a href="" [routerLink]="'/opendata'"
+      routerLinkActive="active">查看空氣品質</a>
     </div>
     <div>
-        <a href="" routerLink="/todoList" >TodoList</a>
+        <a href="" [routerLink]="['/todoList']"
+        routerLinkActive="active">TodoList</a>
     </div>
 
   </div>
